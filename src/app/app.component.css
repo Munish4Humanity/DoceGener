@@ -1,0 +1,56 @@
+p {
+    font-family: Lato
+}
+
+#contentInside {
+    margin: 7px;
+    display: inline-flex
+}
+
+.text-box {
+    border: 1px solid #ccc;
+    background-image: none;
+    display: block;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px
+}
+
+.check-mark {
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0
+}
+
+.dropdown-color {
+    border-radius: 4px
+}
+
+button {
+    background: #0062cc;
+    border: inherit;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 9px 20px;
+    margin-top: 10px
+}
