@@ -1,8 +1,30 @@
 <app-template (myoutput)="getdata($event);"></app-template>
-<div>
+ <div>
   <input type="button" (click)="GenerateHtmlView()" value="Create Table From JSON" />
-  <p id="showData"></p>
+
+<!-- p {outline-color:#3d99d4;}
+p.solid {outline-style: solid;color:#000;font-weight: bold;}
+</style> -->
+<table class="fcolor" id="table" cellpadding="8">
+  <p class="solid">
+  <tr><td class="center"  style="background-color: #3d99d4;"><img class="center" src="../assets/header.PNG"></td></tr>
+</p>
+<p id="showData"></p>
+</table>
+<table id="Downnlod">
+<tr><td>
+<button (click)="exportAsString('pdf', 'portrait')">From String</button>
+<button (click)="exportAs('pdf', 'portrait')">export as pdf</button>
+<button (click)="exportAs('pdf', 'landscape')">export as pdf landscape</button>
+<button (click)="exportAs( 'png')">export as png</button>
+<button (click)="exportAs('csv')">export as csv</button>
+<button (click)="exportAs('txt')">export as txt</button>
+<button (click)="exportAs('xlsx')">export as Ms-Excel</button>
+<!-- <button (click)="exportAs('docx')">export as MS-Word</button>
+<button (click)="exportAs('json')">export as json</button> -->
+<button (click)="exportAs('xml')">export as xml</button>
+</td>
+</tr>
+</table>
+<hr>
 </div>
-
-
-

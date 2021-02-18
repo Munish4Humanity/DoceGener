@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Router, ActivatedRoute, RouterLink, RouterLinkActive, Params } from '@angular/router';
 import { NgZone } from '@angular/core';
-import { jsonpFactory } from '@angular/http/src/http_module';
+// import { jsonpFactory } from '@angular/http/src/http_module';
 @Component({
   selector: 'app-template',
   template: `
@@ -63,7 +63,7 @@ export class TemplateComponent implements OnInit {
     "Column":1,
   }]
   showTable:boolean=false;
-  constructor(private ngZone: NgZone, public router: Router,) {}
+  constructor(private ngZone: NgZone, public router: Router) {}
 
 
   ngOnInit() {
@@ -105,4 +105,5 @@ export class TemplateComponent implements OnInit {
     this.myoutput.emit(this.OutPutString);
     this.ngZone.run(() => this.router.navigateByUrl('/DocumentView'));
   }
+
 }

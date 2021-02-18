@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TemplateComponent } from './template.component';
 import { DocumentViewComponent } from './document-view/document-view.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { ExportAsModule } from 'ngx-export-as';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule ,
     BrowserModule,
     AppRoutingModule,
+    ExportAsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
